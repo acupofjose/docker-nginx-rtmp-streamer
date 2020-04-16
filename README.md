@@ -12,6 +12,4 @@ You can also set a [push](https://github.com/arut/nginx-rtmp-module/wiki/Directi
 
 [Configuration Options for `nginx-rtmp-module`](https://github.com/arut/nginx-rtmp-module/wiki/Directives)
 
-[Authentication can be added via HTTP Basic Auth]([The image is heavily based off of the tutorial here](https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/))
-
 [The image is heavily based off of the tutorial here](https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/)
