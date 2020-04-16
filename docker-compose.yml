@@ -1,0 +1,11 @@
+version: "2.3"
+
+services:
+  streamer:
+    build: .
+    # or image: acupajoe/nginx-rtmp-streamer:latest
+    restart: unless-stopped
+    ports:
+      - 1935:1935
+    volumes:
+      - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
