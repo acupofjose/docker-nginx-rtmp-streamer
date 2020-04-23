@@ -1,13 +1,15 @@
 #!/bin/bash
 
 /usr/bin/stunnel /etc/stunnel/stunnel.conf -d
-if [$status -ne 0]; then
+status=$?
+if [ $status -ne 0 ]; then
   echo "Failed to start stunnel: $status"
   exit $status
 fi
 
-/usr/local/nginx/sbin/nginx -g daemon off;
-if [$status -ne 0]; then
+/usr/local/nginx/sbin/nginx -g "daemon off;"
+status=$?
+if [ $status -ne 0 ]; then
   echo "Failed to start nginx: $status"
   exit $status
 fi

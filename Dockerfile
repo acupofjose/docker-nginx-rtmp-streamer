@@ -28,8 +28,10 @@ WORKDIR /app
 # Move configuration files over
 COPY ./nginx.conf /usr/local/nginx/conf/nginx.conf
 COPY ./stunnel.conf /etc/stunnel/stunnel.conf
-COPY ./start.sh /
+COPY ./start.sh .
+
+RUN chmod +x ./start.sh
 
 EXPOSE 1935
 
-CMD ["start.sh"]
+CMD ["./start.sh"]
