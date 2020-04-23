@@ -10,6 +10,8 @@ You can also set a [push](https://github.com/arut/nginx-rtmp-module/wiki/Directi
 
 ## Resources
 
+[Loopback for Facebook rtmps:// with stunnel](https://sites.google.com/view/facebook-rtmp-to-rtmps/home)
+
 [Configuration Options for `nginx-rtmp-module`](https://github.com/arut/nginx-rtmp-module/wiki/Directives)
 
 [The image is heavily based off of the tutorial here](https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/)

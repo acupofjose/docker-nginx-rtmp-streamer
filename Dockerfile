@@ -20,9 +20,16 @@ RUN cd nginx-1.15.1 && \
     make && \
     make install
 
+# Install stunnel4
+RUN apt-get install stunnel4 -y
+
+WORKDIR /app
+
 # Move configuration files over
 COPY ./nginx.conf /usr/local/nginx/conf/nginx.conf
+COPY ./stunnel.conf /etc/stunnel/stunnel.conf
+COPY ./start.sh /
 
 EXPOSE 1935
 
-CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
+CMD ["start.sh"]
